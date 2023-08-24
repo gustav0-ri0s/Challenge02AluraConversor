@@ -47,7 +47,7 @@ public class ConvertirMonedas {
     }
 
     //Soles a Pesos Colombianos
-    public void ConvertirSolesPesosChilenos (double valor){
+    public void ConvertirSolesAPesosColombianos (double valor){
         double monedaPesosColombia = valor /  0.00278712;
         monedaPesosColombia = (double) Math.round(monedaPesosColombia * 100d)/100;
         JOptionPane.showMessageDialog(null, "Tienes "+monedaPesosColombia+" Pesos Chilenos");
@@ -62,14 +62,14 @@ public class ConvertirMonedas {
 
     //Soles a Real Brasilero
     public void ConvertirSolesAReales (double valor){
-        double monedaRealBr = valor /  0.00278712;
+        double monedaRealBr = valor /   0.755739;
         monedaRealBr = (double) Math.round(monedaRealBr * 100d)/100;
         JOptionPane.showMessageDialog(null, "Tienes "+monedaRealBr+" Reales");
     }
 
     // Soles a Peso Chileno
     public void ConvertirSolesAPesosChilenos (double valor){
-        double monedaPesoChile = valor /  0.00278712;
+        double monedaPesoChile = valor /  0.00434433;
         monedaPesoChile = (double) Math.round(monedaPesoChile * 100d)/100;
         JOptionPane.showMessageDialog(null, "Tienes "+monedaPesoChile+" Pesos Chilenos");
     }
