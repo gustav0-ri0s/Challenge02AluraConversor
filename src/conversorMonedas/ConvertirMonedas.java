@@ -50,7 +50,7 @@ public class ConvertirMonedas {
     public void ConvertirSolesAPesosColombianos (double valor){
         double monedaPesosColombia = valor /  0.00278712;
         monedaPesosColombia = (double) Math.round(monedaPesosColombia * 100d)/100;
-        JOptionPane.showMessageDialog(null, "Tienes "+monedaPesosColombia+" Pesos Chilenos");
+        JOptionPane.showMessageDialog(null, "Tienes "+monedaPesosColombia+" Pesos Colombianos");
     }
 
     //Soles a Pesos Argentinos
