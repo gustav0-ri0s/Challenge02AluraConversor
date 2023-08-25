@@ -31,17 +31,19 @@ public class ConvertirTemperatura {
         return celcius;
     }
 
-    public void ConvertirKelvinAFarenheit(double valor){
-        double farenheit = ConvertirKelvinACelcius(valor);
-        farenheit =  ConvertirCelciusAFarenheit(farenheit);
+    public double ConvertirKelvinAFarenheit(double valor){
+        double farenheit = valor - 273.15;
+        farenheit =  farenheit * 1.8 + 32;
         farenheit = (double) Math.round(farenheit * 100d)/100;
         JOptionPane.showMessageDialog(null, +valor+"K = "+farenheit+"ªF");
+        return farenheit;
     }
 
-    public void ConvertirFarenheitAKelvin(double valor){
-        double kelvin = ConvertirFarenheitACelcius(valor);
-        kelvin = ConvertirCeliusAKelvin(valor);
+    public double ConvertirFarenheitAKelvin(double valor){
+        double kelvin = (valor - 32) / 1.8;
+        kelvin = kelvin + 273.15;
         kelvin = (double) Math.round(kelvin * 100d) / 100;
         JOptionPane.showMessageDialog(null, +valor+"ªF = "+kelvin+"K");
+        return kelvin;
     }
 }
