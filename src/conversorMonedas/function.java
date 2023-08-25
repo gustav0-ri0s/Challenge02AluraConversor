@@ -47,4 +47,8 @@ public class function {
         }
 
     }
+
+    public void ConvertirSoles (double Minput){
+
+    }
 }
